@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnUpdateScreenType = new System.Windows.Forms.Button();
             this.btnDeleteScreenType = new System.Windows.Forms.Button();
@@ -183,20 +182,14 @@
             // 
             // dtgvScreenType
             // 
-            this.dtgvScreenType.AllowUserToAddRows = false;
-            this.dtgvScreenType.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtgvScreenType.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgvScreenType.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvScreenType.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvScreenType.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgvScreenType.Location = new System.Drawing.Point(0, 0);
-            this.dtgvScreenType.Margin = new System.Windows.Forms.Padding(4);
             this.dtgvScreenType.Name = "dtgvScreenType";
-            this.dtgvScreenType.ReadOnly = true;
             this.dtgvScreenType.RowHeadersWidth = 51;
+            this.dtgvScreenType.RowTemplate.Height = 24;
             this.dtgvScreenType.Size = new System.Drawing.Size(779, 565);
-            this.dtgvScreenType.TabIndex = 1;
+            this.dtgvScreenType.TabIndex = 0;
             // 
             // ScreenTypeUC
             // 
@@ -224,12 +217,12 @@
         private System.Windows.Forms.Button btnInsertScreenType;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.DataGridView dtgvScreenType;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel21;
         private System.Windows.Forms.TextBox txtScreenTypeID;
         private System.Windows.Forms.Label lblScreenTypeID;
         private System.Windows.Forms.TextBox txtScreenTypeName;
         private System.Windows.Forms.Label lblScreenTypeName;
+        private System.Windows.Forms.DataGridView dtgvScreenType;
     }
 }

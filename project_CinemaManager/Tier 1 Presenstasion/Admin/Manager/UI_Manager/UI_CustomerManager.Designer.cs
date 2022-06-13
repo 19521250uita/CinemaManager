@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnDeleteCustomer = new System.Windows.Forms.Button();
             this.btnUpdateCustomer = new System.Windows.Forms.Button();
             this.btnAddCustomer = new System.Windows.Forms.Button();
@@ -46,9 +44,10 @@
             this.lblCusAddress = new System.Windows.Forms.Label();
             this.txtCusINumber = new System.Windows.Forms.TextBox();
             this.lblCusName = new System.Windows.Forms.Label();
-            this.dtgvCustomer = new System.Windows.Forms.DataGridView();
             this.btnSearchCus = new System.Windows.Forms.Button();
             this.txtSearchCus = new System.Windows.Forms.TextBox();
+            this.dtgvCustomer = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.grpCustomer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvCustomer)).BeginInit();
             this.SuspendLayout();
@@ -228,35 +227,6 @@
             this.lblCusName.TabIndex = 4;
             this.lblCusName.Text = "Họ tên:";
             // 
-            // dtgvCustomer
-            // 
-            this.dtgvCustomer.AllowUserToAddRows = false;
-            this.dtgvCustomer.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtgvCustomer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgvCustomer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtgvCustomer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgvCustomer.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgvCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvCustomer.Location = new System.Drawing.Point(3, 222);
-            this.dtgvCustomer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtgvCustomer.Name = "dtgvCustomer";
-            this.dtgvCustomer.ReadOnly = true;
-            this.dtgvCustomer.RowHeadersWidth = 51;
-            this.dtgvCustomer.RowTemplate.Height = 24;
-            this.dtgvCustomer.Size = new System.Drawing.Size(1395, 428);
-            this.dtgvCustomer.TabIndex = 14;
-            // 
             // btnSearchCus
             // 
             this.btnSearchCus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -279,17 +249,37 @@
             this.txtSearchCus.TabIndex = 20;
             this.txtSearchCus.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSearchCus_KeyDown);
             // 
+            // dtgvCustomer
+            // 
+            this.dtgvCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtgvCustomer.Location = new System.Drawing.Point(0, 251);
+            this.dtgvCustomer.Name = "dtgvCustomer";
+            this.dtgvCustomer.RowHeadersWidth = 51;
+            this.dtgvCustomer.RowTemplate.Height = 24;
+            this.dtgvCustomer.Size = new System.Drawing.Size(1400, 399);
+            this.dtgvCustomer.TabIndex = 22;
+            // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1400, 251);
+            this.panel1.TabIndex = 23;
+            // 
             // CustomerUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.dtgvCustomer);
             this.Controls.Add(this.btnSearchCus);
             this.Controls.Add(this.txtSearchCus);
             this.Controls.Add(this.btnDeleteCustomer);
             this.Controls.Add(this.btnUpdateCustomer);
             this.Controls.Add(this.btnAddCustomer);
             this.Controls.Add(this.grpCustomer);
-            this.Controls.Add(this.dtgvCustomer);
+            this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "CustomerUC";
             this.Size = new System.Drawing.Size(1400, 650);
@@ -318,8 +308,9 @@
         private System.Windows.Forms.Label lblCusAddress;
         private System.Windows.Forms.TextBox txtCusINumber;
         private System.Windows.Forms.Label lblCusName;
-        private System.Windows.Forms.DataGridView dtgvCustomer;
         private System.Windows.Forms.Button btnSearchCus;
         private System.Windows.Forms.TextBox txtSearchCus;
+        private System.Windows.Forms.DataGridView dtgvCustomer;
+        private System.Windows.Forms.Panel panel1;
     }
 }

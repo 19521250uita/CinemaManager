@@ -28,13 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel47 = new System.Windows.Forms.Panel();
             this.btnUpdateMovie = new System.Windows.Forms.Button();
             this.btnDeleteMovie = new System.Windows.Forms.Button();
             this.btnAddMovie = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dtgvMovie = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dtmMovieEnd = new System.Windows.Forms.DateTimePicker();
             this.dtmMovieStart = new System.Windows.Forms.DateTimePicker();
@@ -58,11 +56,12 @@
             this.lblMovieName = new System.Windows.Forms.Label();
             this.txtMovieID = new System.Windows.Forms.TextBox();
             this.lblMovieID = new System.Windows.Forms.Label();
+            this.dtgvMovie = new System.Windows.Forms.DataGridView();
             this.panel47.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvMovie)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFilm)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvMovie)).BeginInit();
             this.SuspendLayout();
             // 
             // panel47
@@ -121,23 +120,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1548, 638);
             this.panel1.TabIndex = 11;
-            // 
-            // dtgvMovie
-            // 
-            this.dtgvMovie.AllowUserToAddRows = false;
-            this.dtgvMovie.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtgvMovie.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgvMovie.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgvMovie.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvMovie.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtgvMovie.Location = new System.Drawing.Point(0, 404);
-            this.dtgvMovie.Margin = new System.Windows.Forms.Padding(4);
-            this.dtgvMovie.Name = "dtgvMovie";
-            this.dtgvMovie.ReadOnly = true;
-            this.dtgvMovie.RowHeadersWidth = 51;
-            this.dtgvMovie.Size = new System.Drawing.Size(1548, 234);
-            this.dtgvMovie.TabIndex = 1;
             // 
             // panel2
             // 
@@ -318,7 +300,7 @@
             this.clbMovieGenre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.clbMovieGenre.MultiColumn = true;
             this.clbMovieGenre.Name = "clbMovieGenre";
-            this.clbMovieGenre.Size = new System.Drawing.Size(544, 70);
+            this.clbMovieGenre.Size = new System.Drawing.Size(573, 92);
             this.clbMovieGenre.TabIndex = 54;
             // 
             // txtMovieDesc
@@ -390,6 +372,17 @@
             this.lblMovieID.TabIndex = 43;
             this.lblMovieID.Text = "Mã phim:";
             // 
+            // dtgvMovie
+            // 
+            this.dtgvMovie.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvMovie.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtgvMovie.Location = new System.Drawing.Point(0, 404);
+            this.dtgvMovie.Name = "dtgvMovie";
+            this.dtgvMovie.RowHeadersWidth = 51;
+            this.dtgvMovie.RowTemplate.Height = 24;
+            this.dtgvMovie.Size = new System.Drawing.Size(1548, 234);
+            this.dtgvMovie.TabIndex = 11;
+            // 
             // MovieUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -400,10 +393,10 @@
             this.Size = new System.Drawing.Size(1548, 638);
             this.panel47.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvMovie)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFilm)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvMovie)).EndInit();
             this.ResumeLayout(false);
 
         }

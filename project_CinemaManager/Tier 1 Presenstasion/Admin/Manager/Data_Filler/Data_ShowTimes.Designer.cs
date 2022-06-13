@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel54 = new System.Windows.Forms.Panel();
             this.btnSearchShowtime = new System.Windows.Forms.Button();
             this.txtSearchShowtime = new System.Windows.Forms.TextBox();
@@ -37,7 +36,6 @@
             this.btnDeleteShowtime = new System.Windows.Forms.Button();
             this.btnInsertShowtime = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dtgvShowtime = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dtmShowtimeTime = new System.Windows.Forms.DateTimePicker();
@@ -57,11 +55,12 @@
             this.txtTicketPrice_Showtime = new System.Windows.Forms.TextBox();
             this.txtShowtimeID = new System.Windows.Forms.TextBox();
             this.toolTipCinema = new System.Windows.Forms.ToolTip(this.components);
+            this.dtgvShowtime = new System.Windows.Forms.DataGridView();
             this.panel54.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvShowtime)).BeginInit();
             this.panel2.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvShowtime)).BeginInit();
             this.SuspendLayout();
             // 
             // panel54
@@ -142,23 +141,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1548, 574);
             this.panel1.TabIndex = 11;
-            // 
-            // dtgvShowtime
-            // 
-            this.dtgvShowtime.AllowUserToAddRows = false;
-            this.dtgvShowtime.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtgvShowtime.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgvShowtime.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgvShowtime.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvShowtime.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtgvShowtime.Location = new System.Drawing.Point(0, 0);
-            this.dtgvShowtime.Margin = new System.Windows.Forms.Padding(4);
-            this.dtgvShowtime.Name = "dtgvShowtime";
-            this.dtgvShowtime.ReadOnly = true;
-            this.dtgvShowtime.RowHeadersWidth = 51;
-            this.dtgvShowtime.Size = new System.Drawing.Size(1127, 574);
-            this.dtgvShowtime.TabIndex = 1;
             // 
             // panel2
             // 
@@ -363,6 +345,17 @@
             this.toolTipCinema.InitialDelay = 100;
             this.toolTipCinema.ReshowDelay = 100;
             // 
+            // dtgvShowtime
+            // 
+            this.dtgvShowtime.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvShowtime.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtgvShowtime.Location = new System.Drawing.Point(0, 0);
+            this.dtgvShowtime.Name = "dtgvShowtime";
+            this.dtgvShowtime.RowHeadersWidth = 51;
+            this.dtgvShowtime.RowTemplate.Height = 24;
+            this.dtgvShowtime.Size = new System.Drawing.Size(1127, 574);
+            this.dtgvShowtime.TabIndex = 1;
+            // 
             // ShowTimesUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -375,11 +368,11 @@
             this.panel54.ResumeLayout(false);
             this.panel54.PerformLayout();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvShowtime)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvShowtime)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -411,7 +404,7 @@
         private System.Windows.Forms.TextBox txtMovieName_Showtime;
         private System.Windows.Forms.TextBox txtTicketPrice_Showtime;
         private System.Windows.Forms.TextBox txtShowtimeID;
-        private System.Windows.Forms.DataGridView dtgvShowtime;
 		private System.Windows.Forms.ToolTip toolTipCinema;
-	}
+        private System.Windows.Forms.DataGridView dtgvShowtime;
+    }
 }

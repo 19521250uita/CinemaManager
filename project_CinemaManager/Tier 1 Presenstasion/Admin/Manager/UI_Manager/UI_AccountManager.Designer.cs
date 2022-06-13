@@ -29,10 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.toolTipAccountType = new System.Windows.Forms.ToolTip(this.components);
-            this.dtgvAccount = new System.Windows.Forms.DataGridView();
             this.lblStaffID_Account = new System.Windows.Forms.Label();
             this.lblAccountType = new System.Windows.Forms.Label();
             this.grpAccount = new System.Windows.Forms.GroupBox();
@@ -50,38 +47,11 @@
             this.txtID_Account = new System.Windows.Forms.TextBox();
             this.txtName_Customer = new System.Windows.Forms.TextBox();
             this.lblStaffName_Account = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvAccount)).BeginInit();
+            this.dtgvAccount = new System.Windows.Forms.DataGridView();
             this.grpAccount.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvAccount)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dtgvAccount
-            // 
-            this.dtgvAccount.AllowUserToAddRows = false;
-            this.dtgvAccount.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtgvAccount.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgvAccount.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtgvAccount.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvAccount.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgvAccount.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvAccount.Location = new System.Drawing.Point(0, 146);
-            this.dtgvAccount.Margin = new System.Windows.Forms.Padding(4);
-            this.dtgvAccount.Name = "dtgvAccount";
-            this.dtgvAccount.ReadOnly = true;
-            this.dtgvAccount.RowHeadersWidth = 51;
-            this.dtgvAccount.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgvAccount.Size = new System.Drawing.Size(1488, 501);
-            this.dtgvAccount.TabIndex = 21;
             // 
             // lblStaffID_Account
             // 
@@ -287,20 +257,31 @@
             this.lblStaffName_Account.TabIndex = 4;
             this.lblStaffName_Account.Text = "Họ Tên:";
             // 
+            // dtgvAccount
+            // 
+            this.dtgvAccount.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvAccount.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtgvAccount.Location = new System.Drawing.Point(0, 173);
+            this.dtgvAccount.Name = "dtgvAccount";
+            this.dtgvAccount.RowHeadersWidth = 51;
+            this.dtgvAccount.RowTemplate.Height = 24;
+            this.dtgvAccount.Size = new System.Drawing.Size(1488, 474);
+            this.dtgvAccount.TabIndex = 23;
+            // 
             // AccountUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.grpAccount);
             this.Controls.Add(this.dtgvAccount);
+            this.Controls.Add(this.grpAccount);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AccountUC";
             this.Size = new System.Drawing.Size(1488, 647);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvAccount)).EndInit();
             this.grpAccount.ResumeLayout(false);
             this.grpAccount.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvAccount)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -308,7 +289,6 @@
         #endregion
 
         private System.Windows.Forms.ToolTip toolTipAccountType;
-        private System.Windows.Forms.DataGridView dtgvAccount;
         private System.Windows.Forms.Label lblStaffID_Account;
         private System.Windows.Forms.Label lblAccountType;
         private System.Windows.Forms.GroupBox grpAccount;
@@ -326,5 +306,6 @@
         private System.Windows.Forms.TextBox txtID_Account;
         private System.Windows.Forms.TextBox txtName_Customer;
         private System.Windows.Forms.Label lblStaffName_Account;
+        private System.Windows.Forms.DataGridView dtgvAccount;
     }
 }

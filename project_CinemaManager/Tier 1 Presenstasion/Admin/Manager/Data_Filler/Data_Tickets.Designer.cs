@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel61 = new System.Windows.Forms.Panel();
             this.btnShowAllTicketsByShowTime = new System.Windows.Forms.Button();
             this.btnShowAllTicketsBoughtByShowTime = new System.Windows.Forms.Button();
@@ -186,17 +185,12 @@
             // 
             // dtgvTicket
             // 
-            this.dtgvTicket.AllowUserToAddRows = false;
-            this.dtgvTicket.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtgvTicket.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgvTicket.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvTicket.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvTicket.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgvTicket.Location = new System.Drawing.Point(0, 64);
-            this.dtgvTicket.Margin = new System.Windows.Forms.Padding(4);
             this.dtgvTicket.Name = "dtgvTicket";
             this.dtgvTicket.RowHeadersWidth = 51;
+            this.dtgvTicket.RowTemplate.Height = 24;
             this.dtgvTicket.Size = new System.Drawing.Size(808, 574);
             this.dtgvTicket.TabIndex = 12;
             // 

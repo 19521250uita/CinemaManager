@@ -28,13 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel40 = new System.Windows.Forms.Panel();
             this.btnUpdateGenre = new System.Windows.Forms.Button();
             this.btnDeleteGenre = new System.Windows.Forms.Button();
             this.btnInsertGenre = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dtgvGenre = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.txtGenreDesc = new System.Windows.Forms.TextBox();
@@ -45,13 +43,14 @@
             this.panel39 = new System.Windows.Forms.Panel();
             this.txtGenreID = new System.Windows.Forms.TextBox();
             this.lblGenreID = new System.Windows.Forms.Label();
+            this.dtgvGenre = new System.Windows.Forms.DataGridView();
             this.panel40.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvGenre)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel38.SuspendLayout();
             this.panel39.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvGenre)).BeginInit();
             this.SuspendLayout();
             // 
             // panel40
@@ -111,29 +110,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1548, 574);
             this.panel1.TabIndex = 11;
-            // 
-            // dtgvGenre
-            // 
-            this.dtgvGenre.AllowUserToAddRows = false;
-            this.dtgvGenre.AllowUserToDeleteRows = false;
-            this.dtgvGenre.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvGenre.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgvGenre.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvGenre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtgvGenre.Location = new System.Drawing.Point(0, 0);
-            this.dtgvGenre.Margin = new System.Windows.Forms.Padding(4);
-            this.dtgvGenre.Name = "dtgvGenre";
-            this.dtgvGenre.ReadOnly = true;
-            this.dtgvGenre.RowHeadersWidth = 51;
-            this.dtgvGenre.Size = new System.Drawing.Size(1014, 574);
-            this.dtgvGenre.TabIndex = 1;
             // 
             // panel2
             // 
@@ -237,6 +213,17 @@
             this.lblGenreID.TabIndex = 0;
             this.lblGenreID.Text = "Mã thể loại :";
             // 
+            // dtgvGenre
+            // 
+            this.dtgvGenre.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvGenre.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtgvGenre.Location = new System.Drawing.Point(0, 0);
+            this.dtgvGenre.Name = "dtgvGenre";
+            this.dtgvGenre.RowHeadersWidth = 51;
+            this.dtgvGenre.RowTemplate.Height = 24;
+            this.dtgvGenre.Size = new System.Drawing.Size(1014, 574);
+            this.dtgvGenre.TabIndex = 1;
+            // 
             // GenreUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -247,7 +234,6 @@
             this.Size = new System.Drawing.Size(1548, 638);
             this.panel40.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvGenre)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
@@ -255,6 +241,7 @@
             this.panel38.PerformLayout();
             this.panel39.ResumeLayout(false);
             this.panel39.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvGenre)).EndInit();
             this.ResumeLayout(false);
 
         }

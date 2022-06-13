@@ -34,7 +34,6 @@
             this.btnDeleteFormat = new System.Windows.Forms.Button();
             this.btnInsertFormat = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dtgvFormat = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.cboFormat_ScreenID = new System.Windows.Forms.ComboBox();
             this.lblFormat_ScreenName = new System.Windows.Forms.Label();
@@ -46,10 +45,11 @@
             this.lblFormatID = new System.Windows.Forms.Label();
             this.txtFormat_MovieName = new System.Windows.Forms.TextBox();
             this.txtFormatID = new System.Windows.Forms.TextBox();
+            this.dtgvFormat = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvFormat)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvFormat)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -109,22 +109,6 @@
             this.panel2.Size = new System.Drawing.Size(1548, 574);
             this.panel2.TabIndex = 1;
             // 
-            // dtgvFormat
-            // 
-            this.dtgvFormat.AllowUserToAddRows = false;
-            this.dtgvFormat.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtgvFormat.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgvFormat.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgvFormat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvFormat.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtgvFormat.Location = new System.Drawing.Point(0, 0);
-            this.dtgvFormat.Name = "dtgvFormat";
-            this.dtgvFormat.ReadOnly = true;
-            this.dtgvFormat.RowHeadersWidth = 51;
-            this.dtgvFormat.Size = new System.Drawing.Size(1032, 574);
-            this.dtgvFormat.TabIndex = 9;
-            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.cboFormat_ScreenID);
@@ -148,9 +132,9 @@
             this.cboFormat_ScreenID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboFormat_ScreenID.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboFormat_ScreenID.FormattingEnabled = true;
-            this.cboFormat_ScreenID.Location = new System.Drawing.Point(224, 184);
+            this.cboFormat_ScreenID.Location = new System.Drawing.Point(182, 184);
             this.cboFormat_ScreenID.Name = "cboFormat_ScreenID";
-            this.cboFormat_ScreenID.Size = new System.Drawing.Size(249, 31);
+            this.cboFormat_ScreenID.Size = new System.Drawing.Size(291, 31);
             this.cboFormat_ScreenID.TabIndex = 20;
             this.cboFormat_ScreenID.SelectedIndexChanged += new System.EventHandler(this.cboFormat_ScreenID_SelectedValueChanged);
             // 
@@ -169,9 +153,9 @@
             this.cboFormat_MovieID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboFormat_MovieID.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboFormat_MovieID.FormattingEnabled = true;
-            this.cboFormat_MovieID.Location = new System.Drawing.Point(224, 76);
+            this.cboFormat_MovieID.Location = new System.Drawing.Point(182, 76);
             this.cboFormat_MovieID.Name = "cboFormat_MovieID";
-            this.cboFormat_MovieID.Size = new System.Drawing.Size(249, 31);
+            this.cboFormat_MovieID.Size = new System.Drawing.Size(291, 31);
             this.cboFormat_MovieID.TabIndex = 21;
             this.cboFormat_MovieID.SelectedIndexChanged += new System.EventHandler(this.cboFormat_MovieID_SelectedValueChanged);
             // 
@@ -208,10 +192,10 @@
             // txtFormat_ScreenName
             // 
             this.txtFormat_ScreenName.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFormat_ScreenName.Location = new System.Drawing.Point(224, 240);
+            this.txtFormat_ScreenName.Location = new System.Drawing.Point(182, 240);
             this.txtFormat_ScreenName.Name = "txtFormat_ScreenName";
             this.txtFormat_ScreenName.ReadOnly = true;
-            this.txtFormat_ScreenName.Size = new System.Drawing.Size(249, 31);
+            this.txtFormat_ScreenName.Size = new System.Drawing.Size(291, 31);
             this.txtFormat_ScreenName.TabIndex = 12;
             // 
             // lblFormatID
@@ -227,20 +211,38 @@
             // txtFormat_MovieName
             // 
             this.txtFormat_MovieName.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFormat_MovieName.Location = new System.Drawing.Point(224, 133);
+            this.txtFormat_MovieName.Location = new System.Drawing.Point(182, 133);
             this.txtFormat_MovieName.Name = "txtFormat_MovieName";
             this.txtFormat_MovieName.ReadOnly = true;
-            this.txtFormat_MovieName.Size = new System.Drawing.Size(249, 31);
+            this.txtFormat_MovieName.Size = new System.Drawing.Size(291, 31);
             this.txtFormat_MovieName.TabIndex = 13;
             // 
             // txtFormatID
             // 
             this.txtFormatID.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFormatID.Location = new System.Drawing.Point(224, 17);
+            this.txtFormatID.Location = new System.Drawing.Point(182, 17);
             this.txtFormatID.Name = "txtFormatID";
-            this.txtFormatID.Size = new System.Drawing.Size(249, 31);
+            this.txtFormatID.Size = new System.Drawing.Size(291, 31);
             this.txtFormatID.TabIndex = 14;
             this.txtFormatID.TextChanged += new System.EventHandler(this.txtFormatID_TextChanged);
+            // 
+            // dtgvFormat
+            // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvFormat.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgvFormat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvFormat.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtgvFormat.Location = new System.Drawing.Point(0, 0);
+            this.dtgvFormat.Name = "dtgvFormat";
+            this.dtgvFormat.RowHeadersWidth = 51;
+            this.dtgvFormat.RowTemplate.Height = 24;
+            this.dtgvFormat.Size = new System.Drawing.Size(1032, 574);
+            this.dtgvFormat.TabIndex = 1;
             // 
             // FormatMovieUC
             // 
@@ -252,9 +254,9 @@
             this.Size = new System.Drawing.Size(1548, 638);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvFormat)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvFormat)).EndInit();
             this.ResumeLayout(false);
 
         }
